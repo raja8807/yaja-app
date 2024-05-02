@@ -5,11 +5,18 @@ import fonts from "@/styles/fonts";
 import FloatingBottle from "@/components/floating_bottle/floating_bottle";
 import { Image } from "react-bootstrap";
 import { motion } from "framer-motion";
+import appPack from '../../../../../../package.json'
 
 const BannerSection = () => {
   return (
-    <div className={styles.aa}>
-      <FloatingBottle />
+    <div className={styles.bannerSection}>
+      <Image
+        src="/assets/svg/animals.svg"
+        alt="animals"
+        fluid
+        className={styles.animals}
+      />
+      {/* <FloatingBottle /> */}
       {/* <TagLine/> */}
       <>
         <div className="content-wrapper">
@@ -118,13 +125,13 @@ const BannerSection = () => {
                   />
                   <div className="line-2" />
                 </div>
-
                 <Image
                   src="https://assets.website-files.com/64f543aacc333d6bdd537ea8/64f543aacc333d6bdd537eab_texture%202.svg"
                   loading="lazy"
                   alt=""
                   className="texture-2"
                 />
+                <p style={{color:'white'}}> version {appPack.version}</p>
               </div>
             </div>
           </div>

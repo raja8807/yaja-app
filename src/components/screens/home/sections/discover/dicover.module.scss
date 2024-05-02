@@ -27,10 +27,10 @@
 
     .p {
       position: relative;
-      .blob {
-        filter: invert(99%) sepia(4%) saturate(4981%) hue-rotate(3deg)
-          brightness(94%) contrast(100%);
-      }
+      // .blob {
+      //   filter: invert(99%) sepia(4%) saturate(4981%) hue-rotate(3deg)
+      //     brightness(94%) contrast(100%);
+      // }
       .bottle {
         position: absolute;
         height: 90%;

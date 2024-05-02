@@ -7,18 +7,26 @@ import fonts from "@/styles/fonts";
 import { hexToFilter } from "css-filter-converter";
 import { COLORS } from "@/constants/styles";
 
-const Product = () => {
+const Product = ({ name }) => {
   return (
     <div className={styles.p}>
       <Image
         className={styles.blob}
+        style={{
+          filter: hexToFilter(COLORS.color_j3).color,
+        }}
         src="assets/svg/blob1.svg"
         fluid
         alt="b1"
       />
-      <Image className={styles.bottle} src="bottle.png" fluid alt="b1" />
+      <Image
+        className={styles.bottle}
+        src={`/images/flavours/${name.toUpperCase()}.png`}
+        fluid
+        alt="b1"
+      />
       <div className={styles.name}>
-        <p className={fonts.sofadi}>Lychee</p>
+        <p className={fonts.sofadi}>{name}</p>
         <Image
           style={{
             filter: hexToFilter(COLORS.color_j2).color,
@@ -39,8 +47,8 @@ const DiscoverSection = () => {
       <CustomContainer>
         <SectionHeading head="Discover our products" />
         <div className={styles.products}>
-          <Product />
-          <Product />
+          <Product name={"Lychee"} />
+          <Product name={"Mango"} />
         </div>
       </CustomContainer>
     </section>
