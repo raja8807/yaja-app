@@ -8,10 +8,12 @@ const QuoteSection = () => {
     <section className={styles.quoteSection}>
       <CustomContainer>
         <quote className={fonts.script}>
-          &quot;Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Assumenda veritatis nulla iure ex quaerat id consequatur doloremque,
-          incidunt eaque perspiciatis accusantium, eos quasi nisi expedita
-          tenetur facere soluta optio dolore?&quot;
+          &quot;At Yaja, we&apos;re more than just food creators;
+          we&apos;re dreamers, innovators, and believers in a tastier, healthier
+          future. With each bite, you&apos;re not just enjoying a product, but
+          joining a movement towards better living. Welcome to a world where
+          every meal is an adventure, and every choice is a step towards a
+          brighter tomorrow. Thank you for being a part of our journey&quot;
         </quote>
       </CustomContainer>
     </section>
