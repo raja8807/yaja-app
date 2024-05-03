@@ -10,6 +10,9 @@
     @include respond-below(md) {
       font-size: 50px;
     }
+    @include respond-below(sm) {
+      font-size: 40px;
+    }
   }
 
   &.v3 {

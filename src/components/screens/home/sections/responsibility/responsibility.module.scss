@@ -1,3 +1,78 @@
-.responsibilitySection{
-    background-color: $color_j3;
+.responsibilitySection {
+  background-color: $color_j3;
+  overflow: hidden;
+  padding-bottom: 80px;
+  position: relative;
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("/bg/bg2.jpg");
+    background-size: cover;
+    opacity: 0.35;
+  }
+
+  .board {
+    width: 50%;
+    margin-left: -20px;
+    margin-top: -100px;
+
+    position: relative;
+
+    .bird {
+      position: absolute;
+      right: 0;
+      bottom: -50px;
+      width: 30%;
+      transform: scaleX(-1);
+
+      img {
+        transform: rotate(-20deg);
+      }
+
+      @include respond-above(md) {
+        right: -400px;
+        bottom: 0;
+      }
+    }
+
+    p {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translate(-52%, 0);
+      font-size: 40px;
+      font-weight: 600;
+      color: $color_j1;
+      mix-blend-mode: multiply;
+    }
+
+    @include respond-below(sm) {
+      width: 100%;
+      p {
+        bottom: 5px;
+        font-size: 38px;
+      }
+    }
+
+    &.right {
+      transform: scaleX(-1);
+      margin: 0 -20px 0 auto;
+
+      p {
+        left: 50%;
+        transform: scaleX(-1) translate(52%, 0);
+      }
+    }
+  }
+
+  .text {
+    font-size: 20px;
+    color: $color_j5;
+    padding: 30px 0 40px 0;
+    position: relative;
+  }
 }

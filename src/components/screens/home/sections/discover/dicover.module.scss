@@ -39,6 +39,8 @@
         top: -40px;
       }
 
+     
+
       .name {
         position: absolute;
         bottom: 0;
@@ -57,10 +59,24 @@
           color: $color_j3;
         }
 
+        
+
         // > img {
         //   filter: invert(63%) sepia(29%) saturate(643%) hue-rotate(355deg)
         //     brightness(92%) contrast(84%);
         // }
+      }
+
+      &:hover {
+        .bottle {
+          top: -50px;
+        }
+
+       .name{
+        p{
+          transform: translate(-50%, -50%) scale(1.1);
+        }
+       }
       }
     }
     // .p{

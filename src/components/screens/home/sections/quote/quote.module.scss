@@ -1,0 +1,12 @@
+.quoteSection {
+  background-color: $color_j2;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 20px;
+  margin-bottom: 100px;
+
+
+  @include respond-below(md) {
+    font-size: 35px;
+  }
+}
