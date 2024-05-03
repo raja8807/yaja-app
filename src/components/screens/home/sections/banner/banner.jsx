@@ -5,7 +5,8 @@ import fonts from "@/styles/fonts";
 import FloatingBottle from "@/components/floating_bottle/floating_bottle";
 import { Image } from "react-bootstrap";
 import { motion } from "framer-motion";
-import appPack from '../../../../../../package.json'
+import appPack from "../../../../../../package.json";
+import TagLine from "@/components/tagLine/tag_line";
 
 const BannerSection = () => {
   return (
@@ -131,7 +132,17 @@ const BannerSection = () => {
                   alt=""
                   className="texture-2"
                 />
-                <p style={{color:'white'}}> version {appPack.version}</p>
+                <CustomContainer>
+                  <div className={styles.cont}>
+                    <div>
+                      {/* <h1 className={fonts.sofadi}>
+                        <span>Welcome</span> <span>to the</span>{" "}
+                        <span>Jungle</span>
+                      </h1> */}
+                      <TagLine/>
+                    </div>
+                  </div>
+                </CustomContainer>
               </div>
             </div>
           </div>

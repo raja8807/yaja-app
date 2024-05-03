@@ -4,6 +4,7 @@ import { COLORS } from "@/constants/styles";
 
 import { motion } from "framer-motion";
 import { Image } from "react-bootstrap";
+import fonts from "@/styles/fonts";
 
 // import { Playb as TagFont } from "next/font/google";
 
@@ -14,9 +15,9 @@ import { Image } from "react-bootstrap";
 
 const TagLine = () => {
   const [clrs, setClrs] = useState([
-    COLORS.color_blue,
-    COLORS.color_white,
-    COLORS.color_yellow,
+    COLORS.color_j2,
+    COLORS.color_j4,
+    COLORS.color_j3,
   ]);
 
   useEffect(() => {
@@ -46,22 +47,23 @@ const TagLine = () => {
       >
         <Image src="/logo/logo.png"  alt="logo" width={300}/>
       </motion.div> */}
-      <h1>
+      <h1 className={fonts.sofadi}>
         <motion.span
           style={{ color: clrs[0] }}
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ ease: "easeIn", delay: 0.4, duration: 0.2 }}
         >
-          DRINK&apos;
+          Welcome
         </motion.span>
         <motion.span
           style={{ color: clrs[1] }}
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ ease: "easeIn", delay: 0.6, duration: 0.2 }}
+          className={styles.to}
         >
-          WITH
+          TO The
         </motion.span>
         <motion.span
           initial={{ scale: 0 }}
@@ -69,7 +71,7 @@ const TagLine = () => {
           transition={{ ease: "easeIn", delay: 0.8, duration: 0.2 }}
           style={{ color: clrs[2] }}
         >
-          LOVE
+          Jungle
         </motion.span>
       </h1>
     </div>

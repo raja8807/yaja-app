@@ -1,14 +1,12 @@
 .tag {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -30%) rotate(-5deg);
-  z-index: 10;
-
+  // position: absolute;
+  // left: 50%;
+  // top: 50%;
+  transform: rotate(-5deg);
+  // z-index: 10;
 
   h1 {
     font-size: 80px;
-    // color: white;
     font-weight: 800;
     line-height: 50px;
     text-align: center;
@@ -16,15 +14,23 @@
     span {
       display: block;
     }
+
+    .to {
+      font-size: 50px;
+    }
+
     @include respond-above(md) {
       font-size: 130px;
       line-height: 74px;
+    }
+    @include respond-above(xss) {
+      font-size: 60px;
     }
   }
 
   text-shadow: 1px 1px 10px $color_2;
 
-  img{
+  img {
     margin-bottom: 200px;
     width: 300px;
   }
