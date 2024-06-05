@@ -1,3 +1,5 @@
+// import Razorpay from "razorpay";
+import axios from "axios";
 import BannerSection from "./sections/banner/banner";
 import DiscoverSection from "./sections/discover/dicover";
 import FunSection from "./sections/fun/fun";
@@ -10,10 +12,10 @@ const HomeScreen = () => {
     <>
       <BannerSection />
       <DiscoverSection />
-      <FunSection/>
-      <SpecsSection/>
-      <QuoteSection/>
-      <ResponsibilitySection/>
+      <FunSection />
+      <SpecsSection />
+      <QuoteSection />
+      <ResponsibilitySection />
     </>
   );
 };

@@ -7,7 +7,7 @@ import fonts from "@/styles/fonts";
 import { hexToFilter } from "css-filter-converter";
 import { COLORS } from "@/constants/styles";
 
-const Product = ({ name }) => {
+const Product = ({ name,mascot }) => {
   return (
     <div className={styles.p}>
       <Image
@@ -25,6 +25,12 @@ const Product = ({ name }) => {
         fluid
         alt="b1"
       />
+      {/* <Image
+        className={styles.mascot}
+        src={`/assets/mascots/${mascot}.png`}
+        fluid
+        alt="b1"
+      /> */}
       <div className={styles.name}>
         <p className={fonts.sofadi}>{name}</p>
         <Image
@@ -47,8 +53,8 @@ const DiscoverSection = () => {
       <CustomContainer>
         <SectionHeading head="Discover our products" />
         <div className={styles.products}>
-          <Product name={"Lychee"} />
-          <Product name={"Mango"} />
+          <Product name={"Lychee"} mascot='wolf'/>
+          <Product name={"Mango"} mascot='tiger'/>
         </div>
       </CustomContainer>
     </section>

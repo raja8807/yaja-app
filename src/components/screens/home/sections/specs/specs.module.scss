@@ -1,5 +1,6 @@
 .specs {
   padding-bottom: 100px;
+  background-color: $color_j5;
   .card {
     @include flexCenter;
     flex-direction: column;

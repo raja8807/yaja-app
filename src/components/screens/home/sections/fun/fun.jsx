@@ -28,7 +28,7 @@ const FunSection = () => {
               </motion.div>
               <Row>
                 <Col xs={12} md={4}>
-                  <Image src="/assets/avatar.jpg" alt="avatar" fluid />
+                  <Image src="/images/ceo.jpeg" alt="avatar" fluid className={styles.img}/>
                 </Col>
                 <Col xs={12} md={8}>
                   <h4 className={fonts.MainFont}>Lorem, ipsum.</h4>

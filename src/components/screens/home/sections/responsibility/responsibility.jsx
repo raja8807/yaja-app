@@ -23,7 +23,7 @@ const ResponsibilitySection = () => {
             },
           }}
         >
-          <Image src="/assets/svg/bird1.svg" alt="tree-board" fluid />
+          <Image src="/assets/mascots/bird.png" alt="tree-board" fluid />
         </motion.div>
         <p className={fonts.sofadi}>Mission</p>
       </div>
@@ -53,7 +53,7 @@ const ResponsibilitySection = () => {
             },
           }}
         >
-          <Image src="/assets/svg/bird1.svg" alt="tree-board" fluid />
+          <Image src="/assets/mascots/bird.png" alt="tree-board" fluid />
         </motion.div>
         <p className={fonts.sofadi}>Vision</p>
       </div>

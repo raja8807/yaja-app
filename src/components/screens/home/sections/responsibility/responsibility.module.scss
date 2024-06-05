@@ -25,8 +25,8 @@
     .bird {
       position: absolute;
       right: 0;
-      bottom: -50px;
-      width: 30%;
+      bottom: -100px;
+      width: 40%;
       transform: scaleX(-1);
 
       img {
@@ -35,25 +35,32 @@
 
       @include respond-above(md) {
         right: -400px;
-        bottom: 0;
+        bottom: -50px;
       }
     }
 
     p {
       position: absolute;
-      bottom: 40px;
       left: 50%;
       transform: translate(-52%, 0);
-      font-size: 40px;
+      font-size: 50px;
       font-weight: 600;
       color: $color_j1;
       mix-blend-mode: multiply;
+      top: 65%;
     }
 
+    @include respond-below(md) {
+      width: 100%;
+      p {
+        top: 70%;
+        font-size: 38px;
+      }
+    }
     @include respond-below(sm) {
       width: 100%;
       p {
-        bottom: 5px;
+        top: 60%;
         font-size: 38px;
       }
     }

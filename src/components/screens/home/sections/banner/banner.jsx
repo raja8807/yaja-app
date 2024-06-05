@@ -12,7 +12,7 @@ const BannerSection = () => {
   return (
     <div className={styles.bannerSection}>
       <Image
-        src="/assets/svg/animals.svg"
+        src="/assets/svg/yaja-animals.png"
         alt="animals"
         fluid
         className={styles.animals}

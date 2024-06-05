@@ -22,13 +22,16 @@
     "formik": "^2.4.1",
     "framer-motion": "^11.0.8",
     "fs": "^0.0.1-security",
+    "net": "^1.0.2",
     "next": "13.3.0",
     "next-auth": "^4.24.5",
     "nprogress": "^0.2.0",
+    "razorpay": "^2.9.3",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-bootstrap-icons": "^1.10.3",
     "react-dom": "18.2.0",
-    "react-loading-skeleton": "^3.3.1"
+    "react-loading-skeleton": "^3.3.1",
+    "tls": "^0.0.1"
   }
 }

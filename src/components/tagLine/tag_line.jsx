@@ -15,22 +15,22 @@ import fonts from "@/styles/fonts";
 
 const TagLine = () => {
   const [clrs, setClrs] = useState([
+    COLORS.color_j1,
     COLORS.color_j2,
-    COLORS.color_j4,
     COLORS.color_j3,
   ]);
 
-  useEffect(() => {
-    setInterval(() => {
-      setClrs((prev) => {
-        const x = [...prev];
-        x[0] = prev[2];
-        x[1] = prev[0];
-        x[2] = prev[1];
-        return x;
-      });
-    }, 500);
-  }, []);
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     setClrs((prev) => {
+  //       const x = [...prev];
+  //       x[0] = prev[2];
+  //       x[1] = prev[0];
+  //       x[2] = prev[1];
+  //       return x;
+  //     });
+  //   }, 500);
+  // }, []);
 
   return (
     <div
@@ -63,7 +63,7 @@ const TagLine = () => {
           transition={{ ease: "easeIn", delay: 0.6, duration: 0.2 }}
           className={styles.to}
         >
-          TO The
+          TO
         </motion.span>
         <motion.span
           initial={{ scale: 0 }}
@@ -71,7 +71,7 @@ const TagLine = () => {
           transition={{ ease: "easeIn", delay: 0.8, duration: 0.2 }}
           style={{ color: clrs[2] }}
         >
-          Jungle
+          Yaja
         </motion.span>
       </h1>
     </div>
